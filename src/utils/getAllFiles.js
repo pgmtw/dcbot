@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+// return an array of string
 module.exports = (directory, foldersOnly = false) => {
   let fileNames = [];
 
