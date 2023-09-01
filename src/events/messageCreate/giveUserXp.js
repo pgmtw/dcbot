@@ -25,7 +25,7 @@ module.exports = async (client, message) => {
     };
 
     try {
-        const level = await Level.findOne();
+        const level = await Level.findOne(query);
 
         if(level) {
             level.xp += xpToGive;
